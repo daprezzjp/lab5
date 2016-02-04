@@ -14,10 +14,9 @@ function initializePage() {
 }
 
 $(function() {
-	$('.something').click(function(){
+	$('.something').click(function(e){
+		e.preventDefault();
 		var newtext = anagrammedName($(this).text());
-		console.log($(this).text(newtext));
-		console.log(newtext);
 		return $(this).text(newtext);
 	});
 });
