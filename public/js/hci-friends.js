@@ -15,8 +15,10 @@ function initializePage() {
 
 $(function() {
 	$('.something').click(function(){
-		anagrammedName($(this).text());
+		var newtext = anagrammedName($(this).text());
 		console.log($(this).text());
+		console.log(newtext);
+		return newtext;
 	});
 });
 
