@@ -16,9 +16,9 @@ function initializePage() {
 $(function() {
 	$('.something').click(function(){
 		var newtext = anagrammedName($(this).text());
-		console.log($(this).text());
+		console.log($(this).text(newtext));
 		console.log(newtext);
-		return newtext;
+		return $(this).text(newtext);
 	});
 });
 
